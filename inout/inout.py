@@ -96,7 +96,7 @@ if output_name:
 else:
     outfile = sys.stdout
     
-    if infile_name:
+    if input_name:
         infile_only = True
 
 
@@ -104,7 +104,7 @@ else:
 def _replace_extension( filename, newext ):
     
     basename, ext = splitext( filename )
-    result = '.'join(  (basename, newext)  )
+    result = '.'.join(  (basename, newext)  )
     
     return result
 
